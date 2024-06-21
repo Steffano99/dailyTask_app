@@ -1,0 +1,4 @@
+#Fri Jun 21 14:49:17 GMT 2024
+base.0=C\:\\Users\\BAAH AMOS ASENSO\\Desktop\\ESSENTIALS\\GITHUB CLONES\\dailyTask_app\\daily_task\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
