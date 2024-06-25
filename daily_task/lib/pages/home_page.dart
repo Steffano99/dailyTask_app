@@ -8,7 +8,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  late double _deviceHeight, _deviceWidth;
+  late double _deviceHeight;
+  late double _deviceWidth;
   @override
   Widget build(BuildContext context) {
     _deviceHeight = MediaQuery.of(context).size.height;
