@@ -17,6 +17,7 @@ INJECTED from C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTa
 INJECTED from C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\android\app\src\main\AndroidManifest.xml:1:1-33:12
 INJECTED from C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\android\app\src\main\AndroidManifest.xml:1:1-33:12
 MERGED from C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from [:path_provider_android] C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\BAAH AMOS ASENSO\.gradle\caches\transforms-3\99750bb863b6fe460a7b5da8686e778d\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\BAAH AMOS ASENSO\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\BAAH AMOS ASENSO\.gradle\caches\transforms-3\bd3b08f2286d6f234db7d387c15cb207\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -55,6 +56,8 @@ uses-sdk
 INJECTED from C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\android\app\src\main\AndroidManifest.xml
+MERGED from [:path_provider_android] C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\BAAH AMOS ASENSO\.gradle\caches\transforms-3\99750bb863b6fe460a7b5da8686e778d\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\BAAH AMOS ASENSO\.gradle\caches\transforms-3\99750bb863b6fe460a7b5da8686e778d\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\BAAH AMOS ASENSO\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
