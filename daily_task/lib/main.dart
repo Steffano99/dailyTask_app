@@ -1,4 +1,4 @@
-import 'package:daily_task/pages/home_page.dart';
+import 'package:daily_task/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Daily Task',
       theme: ThemeData(primarySwatch: Colors.red),
-      home: const HomePage(),
+      home: const Splashscreen(),
     );
   }
 }
