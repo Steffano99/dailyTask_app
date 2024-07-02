@@ -24,6 +24,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: _dailyTaskList(),
+      floatingActionButton: _addTaskButton(),
     );
   }
 
@@ -42,6 +43,12 @@ class _HomePageState extends State<HomePage> {
           ),
         )
       ],
+    );
+  }
+
+  Widget _addTaskButton() {
+    return FloatingActionButton(
+      onPressed: () {},
     );
   }
 }
