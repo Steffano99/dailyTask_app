@@ -1,4 +1,6 @@
+import 'package:daily_task/models/my_task.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -10,6 +12,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   late double _deviceHeight;
   late double _deviceWidth;
+  String? _newContent;
+  Box? _box;
   @override
   Widget build(BuildContext context) {
     _deviceHeight = MediaQuery.of(context).size.height;
@@ -28,7 +32,23 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  Widget _viewTask() {
+    return FutureBuilder(
+        future: Hive.openBox('myTask'),
+        builder: (BuildContext _context, AsyncSnapshot _snapshot) {
+          if (_snapshot.connectionState == ConnectionState.done) {
+            _box = _snapshot.data;
+            return _viewTask();
+          } else {
+            return const Center(child: CircularProgressIndicator());
+          }
+        });
+  }
+
   Widget _dailyTaskList() {
+    MyTask newTask =
+        MyTask(content: "Eat Gob3", timestamp: DateTime.now(), done: false);
+    _box?.add(newTask.toMap());
     return ListView(
       children: [
         ListTile(
@@ -49,8 +69,26 @@ class _HomePageState extends State<HomePage> {
   Widget _addTaskButton() {
     return FloatingActionButton(
       backgroundColor: Colors.red,
-      onPressed: () {},
+      onPressed: _displayMyTaskPopup,
       child: const Icon(Icons.add, color: Colors.white),
     );
+  }
+
+  void _displayMyTaskPopup() {
+    showDialog(
+        context: context,
+        builder: (BuildContext _context) {
+          return AlertDialog(
+            title: const Text('Add Your New Task!'),
+            content: TextField(
+              onSubmitted: (_value) {},
+              onChanged: (_value) {
+                setState(() {
+                  _newContent = _value;
+                });
+              },
+            ),
+          );
+        });
   }
 }
