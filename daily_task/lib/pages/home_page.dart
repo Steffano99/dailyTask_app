@@ -15,6 +15,11 @@ class _HomePageState extends State<HomePage> {
   String? _newContent;
   Box? _box;
   @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     _deviceHeight = MediaQuery.of(context).size.height;
     _deviceWidth = MediaQuery.of(context).size.width;
@@ -27,18 +32,18 @@ class _HomePageState extends State<HomePage> {
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
       ),
-      body: _dailyTaskList(),
+      body: _viewTask(),
       floatingActionButton: _addTaskButton(),
     );
   }
 
   Widget _viewTask() {
     return FutureBuilder(
-        future: Hive.openBox('myTask'),
-        builder: (BuildContext _context, AsyncSnapshot _snapshot) {
-          if (_snapshot.connectionState == ConnectionState.done) {
-            _box = _snapshot.data;
-            return _viewTask();
+        future: Hive.openBox('tasks'),
+        builder: (BuildContext context, AsyncSnapshot snapshot) {
+          if (snapshot.hasData) {
+            _box = snapshot.data;
+            return _dailyTaskList();
           } else {
             return const Center(child: CircularProgressIndicator());
           }
@@ -46,24 +51,39 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _dailyTaskList() {
-    MyTask newTask =
-        MyTask(content: "Eat Gob3", timestamp: DateTime.now(), done: false);
-    _box?.add(newTask.toMap());
-    return ListView(
-      children: [
-        ListTile(
-          title: const Text(
-            'Do Project',
-            style: TextStyle(),
-          ),
-          subtitle: Text(DateTime.now().toString()),
-          trailing: const Icon(
-            Icons.check_box_outlined,
-            color: Colors.red,
-          ),
-        )
-      ],
-    );
+    /*MyTask _newTask = MyTask(
+        content: 'Eat Pizza', timestamp: DateTime.timestamp(), done: false);
+    _box?.add(_newTask.toMap());
+    List tasks = _box!.values.toList();*/
+    List tasks = _box!.values.toList();
+    return ListView.builder(
+        itemCount: tasks.length,
+        itemBuilder: (BuildContext context, int index) {
+          var task = MyTask.fromMap(tasks[index]);
+          return ListTile(
+            title: Text(
+              task.content,
+              style: TextStyle(
+                  decoration: task.done ? TextDecoration.lineThrough : null),
+            ),
+            subtitle: Text(task.timestamp.toString()),
+            trailing: Icon(
+              task.done
+                  ? Icons.check_box_outlined
+                  : Icons.check_box_outline_blank_outlined,
+              color: Colors.red,
+            ),
+            onTap: () {
+              task.done = !task.done;
+              _box!.putAt(index, task.toMap());
+              setState(() {});
+            },
+            onLongPress: () {
+              _box!.deleteAt(index);
+              setState(() {});
+            },
+          );
+        });
   }
 
   Widget _addTaskButton() {
@@ -77,11 +97,23 @@ class _HomePageState extends State<HomePage> {
   void _displayMyTaskPopup() {
     showDialog(
         context: context,
-        builder: (BuildContext _context) {
+        builder: (BuildContext context) {
           return AlertDialog(
             title: const Text('Add Your New Task!'),
             content: TextField(
-              onSubmitted: (_value) {},
+              onSubmitted: (_) {
+                if (_newContent != null) {
+                  var task = MyTask(
+                      content: _newContent!,
+                      timestamp: DateTime.now(),
+                      done: false);
+                  _box!.add(task.toMap());
+                  setState(() {
+                    _newContent = null;
+                    Navigator.pop(context);
+                  });
+                }
+              },
               onChanged: (_value) {
                 setState(() {
                   _newContent = _value;
