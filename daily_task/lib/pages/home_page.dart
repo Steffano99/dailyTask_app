@@ -1,4 +1,5 @@
 import 'package:daily_task/models/my_task.dart';
+import 'package:daily_task/widget.dart/menu_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -27,10 +28,13 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.red,
         toolbarHeight: _deviceHeight * 0.14,
-        title: const Text(
+        title: Text(
           'DAILY TASK',
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
+        actions: <Widget>[
+          MenuButton(),
+        ],
       ),
       body: _viewTask(),
       floatingActionButton: _addTaskButton(),
