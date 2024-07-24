@@ -55,10 +55,6 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _dailyTaskList() {
-    /*MyTask _newTask = MyTask(
-        content: 'Eat Pizza', timestamp: DateTime.timestamp(), done: false);
-    _box?.add(_newTask.toMap());
-    List tasks = _box!.values.toList();*/
     List tasks = _box!.values.toList();
     return ListView.builder(
         itemCount: tasks.length,
