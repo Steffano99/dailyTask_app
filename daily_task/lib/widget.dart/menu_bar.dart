@@ -16,7 +16,11 @@ class MenuButton extends StatelessWidget {
           }
         },
         itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
-              const PopupMenuItem(value: 'option 1', child: Text('option 1'))
+              const PopupMenuItem(value: 'option 1', child: Text('option 1')),
+              const PopupMenuItem(value: 'option 2', child: Text('option 2')),
+              const PopupMenuItem(value: 'option 3', child: Text('option 3')),
+              const PopupMenuItem(value: 'option 4', child: Text('option 4')),
+              const PopupMenuItem(value: 'option 5', child: Text('option 5')),
             ]);
   }
 }
