@@ -10,7 +10,7 @@ class Splashscreen extends StatelessWidget {
     return AnimatedSplashScreen(
       splash: Image.asset('assets/images/daily_task.png'),
       nextScreen: const HomePage(),
-      duration: 6000,
+      duration: 3000,
       splashTransition: SplashTransition.fadeTransition,
     );
   }
