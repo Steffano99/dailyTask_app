@@ -6,9 +6,10 @@ class MenuButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PopupMenuButton<String>(
+        color: Color.fromARGB(255, 174, 234, 235),
         icon: Icon(
           Icons.menu,
-          color: Colors.white,
+          color: Color.fromARGB(255, 243, 228, 228),
         ),
         onSelected: (String result) {
           switch (result) {
@@ -16,11 +17,36 @@ class MenuButton extends StatelessWidget {
           }
         },
         itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
-              const PopupMenuItem(value: 'option 1', child: Text('option 1')),
-              const PopupMenuItem(value: 'option 2', child: Text('option 2')),
-              const PopupMenuItem(value: 'option 3', child: Text('option 3')),
-              const PopupMenuItem(value: 'option 4', child: Text('option 4')),
-              const PopupMenuItem(value: 'option 5', child: Text('option 5')),
+              const PopupMenuItem(
+                  value: 'option 1',
+                  child: Text(
+                    'Task List',
+                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+                  )),
+              const PopupMenuItem(
+                  value: 'option 2',
+                  child: Text(
+                    'Follow Us',
+                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+                  )),
+              const PopupMenuItem(
+                  value: 'option 3',
+                  child: Text(
+                    'Invite friends to the app',
+                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+                  )),
+              const PopupMenuItem(
+                  value: 'option 4',
+                  child: Text(
+                    'About Us',
+                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+                  )),
+              const PopupMenuItem(
+                  value: 'option 5',
+                  child: Text(
+                    'Settings',
+                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+                  )),
             ]);
   }
 }

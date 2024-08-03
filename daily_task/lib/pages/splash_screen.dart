@@ -8,7 +8,9 @@ class Splashscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
+      backgroundColor: Color.fromARGB(255, 2, 59, 59),
       splash: Image.asset('assets/images/daily_task.png'),
+      
       nextScreen: const HomePage(),
       duration: 2000,
       splashTransition: SplashTransition.fadeTransition,

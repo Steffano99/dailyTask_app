@@ -10,3 +10,4 @@ com.example.daily_task.app-rs-8 C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GIT
 com.example.daily_task.app-mergeDebugResources-9 C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
 com.example.daily_task.app-mergeDebugResources-10 C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
 com.example.daily_task.app-merged_res-11 C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\build\app\intermediates\merged_res\debug
+com.example.daily_task.app-packaged_res-12 C:\Users\BAAH AMOS ASENSO\Desktop\ESSENTIALS\GITHUB CLONES\dailyTask_app\daily_task\build\path_provider_android\intermediates\packaged_res\debug

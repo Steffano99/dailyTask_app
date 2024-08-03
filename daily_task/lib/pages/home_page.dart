@@ -26,17 +26,21 @@ class _HomePageState extends State<HomePage> {
     _deviceWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        centerTitle: true,
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadiusDirectional.circular(20)),
+        backgroundColor: Color.fromARGB(255, 13, 119, 121),
         toolbarHeight: _deviceHeight * 0.14,
-        title: Text(
-          'DAILY TASK',
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-        ),
+        title: Text('DAILY TASK',
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 243, 228, 228))),
         actions: <Widget>[
           MenuButton(),
         ],
       ),
       body: _viewTask(),
+      backgroundColor: Color.fromARGB(255, 2, 59, 59),
       floatingActionButton: _addTaskButton(),
     );
   }
@@ -60,35 +64,54 @@ class _HomePageState extends State<HomePage> {
         itemCount: tasks.length,
         itemBuilder: (BuildContext context, int index) {
           var task = MyTask.fromMap(tasks[index]);
-          return ListTile(
-            title: Text(
-              task.content,
-              style: TextStyle(
-                  decoration: task.done ? TextDecoration.lineThrough : null),
+          return Container(
+            margin: EdgeInsets.fromLTRB(5, 5, 5, 5),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(25),
+              border: Border.all(
+                style: BorderStyle.solid,
+                color: Color.fromARGB(255, 241, 146, 87),
+              ),
+              shape: BoxShape.rectangle,
             ),
-            subtitle: Text(task.timestamp.toString()),
-            trailing: Icon(
-              task.done
-                  ? Icons.check_box_outlined
-                  : Icons.check_box_outline_blank_outlined,
-              color: Colors.red,
+            child: ListTile(
+              title: Text(
+                task.content,
+                style: TextStyle(
+                    color: Color.fromARGB(255, 243, 228, 228),
+                    fontWeight: FontWeight.w800,
+                    decoration: task.done ? TextDecoration.lineThrough : null),
+              ),
+              subtitle: Text(
+                task.timestamp.toString(),
+                style: TextStyle(
+                  color: Color.fromARGB(255, 243, 228, 228),
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              trailing: Icon(
+                task.done
+                    ? Icons.check_box_outlined
+                    : Icons.check_box_outline_blank_outlined,
+                color: Color.fromARGB(255, 240, 97, 9),
+              ),
+              onTap: () {
+                task.done = !task.done;
+                _box!.putAt(index, task.toMap());
+                setState(() {});
+              },
+              onLongPress: () {
+                _box!.deleteAt(index);
+                setState(() {});
+              },
             ),
-            onTap: () {
-              task.done = !task.done;
-              _box!.putAt(index, task.toMap());
-              setState(() {});
-            },
-            onLongPress: () {
-              _box!.deleteAt(index);
-              setState(() {});
-            },
           );
         });
   }
 
   Widget _addTaskButton() {
     return FloatingActionButton(
-      backgroundColor: Colors.red,
+      backgroundColor: Color.fromARGB(255, 219, 106, 14),
       onPressed: _displayMyTaskPopup,
       child: const Icon(Icons.add, color: Colors.white),
     );
@@ -99,7 +122,11 @@ class _HomePageState extends State<HomePage> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: const Text('Add Your New Task!'),
+            backgroundColor: Color.fromARGB(255, 174, 234, 235),
+            title: const Text(
+              'Add Your New Task!',
+              style: TextStyle(color: Colors.black),
+            ),
             content: TextField(
               onSubmitted: (_) {
                 if (_newContent != null) {

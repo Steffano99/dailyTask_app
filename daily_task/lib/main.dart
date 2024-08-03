@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Daily Task',
-      theme: ThemeData(primarySwatch: Colors.red),
+      theme: ThemeData(primaryColor: Color(0xFF083D3E)),
       home: const Splashscreen(),
     );
   }
