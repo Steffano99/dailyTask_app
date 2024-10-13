@@ -9,11 +9,11 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Daily Task',
+
       theme: ThemeData(primaryColor: Color(0xFF083D3E)),
       home: const Splashscreen(),
     );
