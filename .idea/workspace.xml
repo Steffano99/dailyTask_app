@@ -5,14 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90c8633c-f7aa-416e-ac77-cad6e9e1ce77" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daily_task/.dart_tool/flutter_build/dart_plugin_registrant.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/.dart_tool/version" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/.dart_tool/version" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/daily_task/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daily_task/build/ccfb0f11ad27f6e79fd056c60be52816/gen_dart_plugin_registrant.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/build/ccfb0f11ad27f6e79fd056c60be52816/gen_dart_plugin_registrant.stamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daily_task/build/flutter_assets/NOTICES" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/build/flutter_assets/NOTICES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daily_task/build/flutter_assets/shaders/ink_sparkle.frag" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/build/flutter_assets/shaders/ink_sparkle.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/analysis_options.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/analysis_options.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/android/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/.last_build_id" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/.last_build_id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/flutter_assets/AssetManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/flutter_assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/flutter_assets/NOTICES.Z" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/flutter_assets/assets/images/daily_task.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/flutter_assets/fonts/MaterialIcons-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/flutter_assets/isolate_snapshot_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/flutter_assets/shaders/ink_sparkle.frag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/build/app/intermediates/flutter/debug/flutter_assets/vm_snapshot_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/ios/Flutter/Generated.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/daily_task/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daily_task/lib/pages/splash_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/lib/pages/splash_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_task/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/daily_task/pubspec.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +95,7 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/BAAH AMOS ASENSO/Desktop/ESSENTIALS/GITHUB CLONES/dailyTask_app",
+    "last_opened_file_path": "C:/Users/BAAH AMOS ASENSO/Desktop/ESSENTIALS/GITHUB CLONES/MyMoon_App",
     "settings.editor.selected.configurable": "device.mirroring",
     "show.migrate.to.gradle.popup": "false"
   }
