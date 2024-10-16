@@ -16,7 +16,7 @@ class Splashscreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center, // This centers the children within the Row
           children: [
             Text(
-              'DAILY TASK',
+              'DAILY',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,

@@ -291,9 +291,9 @@
     },
     {
       "name": "win32",
-      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.2.0",
+      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/win32-5.1.0",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.1"
     },
     {
       "name": "xdg_directories",
@@ -320,7 +320,7 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-10-13T16:55:19.799796Z",
+  "generated": "2024-10-13T20:07:11.360368Z",
   "generator": "pub",
   "generatorVersion": "3.5.3",
   "flutterRoot": "file:///C:/src/flutter",
